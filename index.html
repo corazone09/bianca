@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Yang Tercantik</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="main-message">Kamu Cantik <span class="heart">❤️</span></h1>
+            <div class="floating-hearts"></div>
+        </div>
+
+        <div class="photo-display">
+            <div class="photo-frame">
+                <!-- Foto akan dimasukkan oleh JavaScript -->
+            </div>
+            <div class="photo-controls">
+                <button id="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                <span id="photo-counter">1/13</span>
+                <button id="next-btn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <audio id="bg-music" loop>
+                <!-- Ganti dengan file musik Anda -->
+                <source src="/assets/fall.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio
+            </audio>
+            <div class="music-controls">
+                <button id="play-btn" class="music-btn"><i class="fas fa-play"></i></button>
+                <button id="pause-btn" class="music-btn"><i class="fas fa-pause"></i></button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.7">
+            </div>
+            <div class="song-info">Lagu: gatau lupa hehe</div>
+        </div>
+
+        <div class="footer">
+            <p>Dibuat dengan maksud untuk menyadarkanmu bahwa kamu itu CANTIK!!!</p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
